@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Yabu no Naka</title>
+
+</head>
+<body>
+<p><br /></p>
+
+<p><a style="border:none;" href="http://rakugaki.me"><img src="./docs/slogo.png"></a></p>
+
+<p><br style="clear:both" /></p>
+
+<hr />
+
+
+<h1>Yabu no Naka</h1>
+
+<hr />
+
+
+<h3>Description</h3>
+
+<p><strong>Yabu no Naka</strong> is a <a href="http://ghost.org">ghost</a> theme designed and coded by Art Chen (a.k.a Hermit) from <a href="http://rakugaki.me">Rakugaki</a>.</p>
+
+<p><strong>Yabu no Naka</strong> is of pure Chinese and Japanese style. I named this theme after a masterpiece of <a href="http://en.wikipedia.org/wiki/Ry%C5%ABnosuke_Akutagawa">Akutagawa Ryunosuke</a>. With refreshing green tone and classic layout, it is a great theme for writing journals, post drawings and designs, and sharing your artistic feelings.</p>
+
+<p>Here are some features of this theme:</p>
+
+<ul>
+<li>100% Responsive and ready for Retina</li>
+<li>Customizable sidebar menu and site descriptions</li>
+<li>10+ social network icons</li>
+<li>Ghost 0.4 compatible</li>
+<li>Google Fonts</li>
+</ul>
+
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="index">Index of Contents</h3>
+
+
+<ol>
+<li><a href="#install">How to install</a></li>
+<li><a href="#html-structure">HTML Structure</a></li>
+<li><a href="#css-structure">CSS Structure</a></li>
+<li><a href="#javascript">Javascript</a></li>
+<li><a href="#settings">Theme Settings</a></li>
+<li><a href="#customize">Customization</a></li>
+<li><a href="#credits">Sources and Credits</a></li>
+</ol>
+
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="install">How to Install</h3>
+
+
+<p>Installation of ghost theme is quite simple if you've already set up your ghost blog correctly on your server or localhost. If you haven't done so, here are some articles I recommend you to read:</p>
+
+<ul>
+<li>Official instruction on ghost.org <a href="http://docs.ghost.org/installation/">http://docs.ghost.org/installation/</a></li>
+<li>Ghost on Linode by Rune Gulbrandsøy <a href="http://ghostblog.be/ghost-on-linode/">http://ghostblog.be/ghost-on-linode/</a></li>
+</ul>
+
+
+<p>The general steps of ghost theme installation:</p>
+
+<ol>
+<li><p>Configure (and customize) your theme;</p></li>
+<li><p>Upload or copy the folder contains your theme to <code>/ghost/content/themes/</code> (You do not need to upload <code>readme.html</code>, <code>readme.md</code> and the folder <code>/docs</code>);</p></li>
+<li><p>Restart your instance of ghost. There are two options (as far as I know):</p>
+
+<ul>
+<li>If you run ghost blog via <code>forever</code>, you can direct to your <code>/ghost</code> directory and restart the instance by typing in this command: <code>sudo forever restart index.js</code></li>
+<li>If you run ghost as a startup service on your server, you may use <code>sudo service ghost restart</code> (under Ubuntu, should be similar on other distributions). This is the way I do and recommend.</li>
+</ul>
+</li>
+</ol>
+
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="html-structure">HTML Structure</h3>
+
+
+<p>Here is the basic HTML structure of <strong>Yabu no Naka</strong>:</p>
+
+<pre><code>&lt;body&gt;
+
+    &lt;header id="header"&gt;
+        Logo
+    &lt;/header&gt;
+
+    &lt;div id="container" class="cf"&gt;
+
+        &lt;section id="sidebar"&gt;
+            Sidebar
+        &lt;/section&gt;
+
+        &lt;main class="post-list" role="main"&gt;
+            Post and Pagination
+        &lt;/main&gt;
+
+    &lt;/div&gt;
+
+    &lt;footer id="footer"&gt;
+        Copyright info
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+</code></pre>
+
+<p>In the <code>#container</code> div, <code>#sidebar</code> and <code>.post-list</code> are floating blocks, which makes the two-column layout.</p>
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="css-structure">CSS Structure</h3>
+
+
+<p>The CSS structure of this theme is arranged in the following manner:</p>
+
+<pre><code>/* === Include === */
+
+    Some code
+
+/* === Reset === */
+
+    Some code
+
+/* === Header === */
+
+    Some code
+
+/* === Container === */
+
+    Some code
+
+/* === Sidebar === */
+
+    Some code
+
+...etc.
+
+/* === Responsive === */
+
+    Some code
+</code></pre>
+
+<p>The last block of CSS code handles responsive features.</p>
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="javascript">JavaScript</h3>
+
+
+<p>There is two Javascript file contained in this theme, <code>/assets/js/jquery.fitvids.js</code> and <code>/assets/js/all.js</code>.</p>
+
+<p><code>all.js</code> contains theme settings, codes that parse theme settings to htmls and a little bit of visual effect codes.</p>
+
+<p><code>/assets/js/jquery.fitvids.js</code> is the jquery plugin I used for responsive embed video.</p>
+
+<p>Both files are loaded at the bottom of page, right above the closing tag <code>&lt;/body&gt;</code>.</p>
+
+<p>Ghost will automatically load jQuery into the page (before our js files), this is handled by <code>{{ghost_foot}}</code>. Please do not flip the order of this line of code with the other javascript-loading tags.</p>
+
+<p>Of course, feel free to edit <code>all.js</code> :)</p>
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="settings">Theme Settings</h3>
+
+
+<p>All the theme settings of <strong>Yabu no Naka</strong> are enabled using a function <code>Ysettings</code> located in <code>/yabu/assets/js/all.js</code>.</p>
+
+<p>The options locate in <code>js/options.json</code>. You are going to modify this json file to set your options.</p>
+
+<p>Here is the syntax we use to set the options:</p>
+
+<ul>
+<li><p><strong>"y_author"</strong></p>
+
+<ul>
+<li>Set author's name</li>
+<li>Default: "John Smith"</li>
+<li><p>Example:</p>
+
+<pre><code>  "y_author": "Art Chen"
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>y_right_sidebar</strong></p>
+
+<ul>
+<li>Set <code>true</code> if you want the sidebar floating to right</li>
+<li>Default: false</li>
+<li><p>Example:</p>
+
+<pre><code>  "y_right_sidebar": true
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>y_right_logo</strong></p>
+
+<ul>
+<li>Set <code>true</code> if you want the logo floating to right</li>
+<li>Default: false</li>
+<li><p>Example:</p>
+
+<pre><code>  "y_right_logo": false
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+
+<h5>Special instructions on site menu settings (please read)</h5>
+
+<p>Since ghost v0.5.9 we finally got official support for navigation settings. You can make your main menu directly from admin panel!</p>
+
+<ul>
+<li><p><strong>y_description</strong></p>
+
+<ul>
+<li>Set the "set" key to <code>true</code> if you want to customize the style of your site description (i.e. use HTML+CSS). Please be sure to write every line of your description inside a pair of <code>&lt;p></code> tag. If "set" is set to <code>false</code> (by default), the blog description from ghost dashboard will be displayed.</li>
+<li><p>Default: false</p>
+
+<pre><code>  "y_description": {
+      "set": true,
+      "desc": "&lt;p&gt;Hermit Chen&lt;/p&gt;&lt;p&gt;Portfolio @ rakugaki.me&lt;/p&gt;&lt;p&gt;Themeforest ID = otakism&lt;/p&gt;&lt;p&gt;Thank you for previewing my theme.&lt;/p&gt;",
+      "textalign": "center"
+  }
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>y_social</strong></p>
+
+<ul>
+<li>Add social network icons displayed in the bottom of page. I recommend a total number of less than 10 icons</li>
+<li><p>Examples: only enabling facebook icon and github icon</p>
+
+<pre><code>  "y_social": [
+      {
+          "name": "facebook",
+          "url": "YOUR FACEBOOK PAGE'S URL"
+      },
+      {
+          "name": "github",
+          "url": "#"
+      }
+  ]
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+
+<h5>Put it together</h5>
+
+<p>Just to demonstrate how should a valid theme setting look like.</p>
+
+<pre><code>var theme_options = {
+    "y_author": "Art Chen",
+    "y_description": {
+        "set": true,
+        "desc": "&lt;p&gt;a&lt;/p&gt;&lt;p&gt;r&lt;/p&gt;&lt;p&gt;t&lt;/p&gt;",
+        "textalign": "center"
+    },
+    "y_social": [
+        {
+            "name": "facebook",
+            "url": "#"
+        },
+        {
+            "name": "github",
+            "url": "#"
+        }
+    ]
+}
+</code></pre>
+
+<p>* <strong>Please be aware that only correctly formatted settings can be parsed properly.</strong></p>
+
+<p>* <strong>Please compare your settings with the above example carefully. Even a dropped comma could ruin everything.</strong></p>
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="customize">Customization</h3>
+
+
+<p>If you would like to make some changes to <strong>Yabu no Naka</strong>, especially the CSS styling, you can either create a new custom CSS file, or edit the original style.css directly. If you choose to create a new stylesheet, for example <code>custom.css</code>, you may link it to the page by adding the following line of code right below the <code>screen.css</code>:</p>
+
+<pre><code>...
+
+&lt;link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" /&gt;
+
+...
+</code></pre>
+
+<p>Please be sure to put your file in <code>/asset/css</code> directory.</p>
+
+<p>Modifying styles is simple if you know how to write CSS. For example, if you want to change the color of hyperlink when it is hovered, you may write these code:</p>
+
+<pre><code>a:hover{
+    color:rgba(38,135,133,0.9);
+}
+</code></pre>
+
+<p>This will work for those hyperlinks that haven't been set a specific "hovering color". If there is already a style defined for the element you want to make changes to, you need to find that line of code and modify it.</p>
+
+<p>If you are writing in your own <code>custom.css</code>, you need to use a selector that is at least as specific as the original one (I know it sounds complicated...but it is not actually). For instance, you want to change the hovering effect of post title, but it has already been defined in <code>screen.css</code> as follows:</p>
+
+<pre><code>.post-title a:hover h3{
+    color:rgba(38,135,133,0.9);
+}
+</code></pre>
+
+<p>In this case, you have to (at least) write</p>
+
+<pre><code>.post-title a:hover h3{
+    color: /* Your Favorite Color */;
+}
+</code></pre>
+
+<p>Rather than</p>
+
+<pre><code>a:hover h3{
+    color: /* Your Favorite Color */;
+}
+</code></pre>
+
+<p>This is because the browser will follow the most recently loaded (this is why we put <code>custom.css</code> after <code>screen.css</code>) and the most specific CSS code.</p>
+
+<p>I would like to recommend you to use Google Chrome's <code>Inspect Element</code> function while you are editing your theme. You can invoke it by right-clicking on any element you want to inspect, it is (usually) the last option in the menu.</p>
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+
+
+<h3 id="credits">Sources and Credits</h3>
+
+
+<p>I've use these images or files files as listed:</p>
+
+<ul>
+<li><code>/assets/images/social.svg</code> - icons from <a href="http://icomoon.io/">icomoon.io</a></li>
+<li><code>/assets/js/jquery.fitvids.js</code> - <a href="https://github.com/davatron5000/FitVids.js">FitVids.js</a> by @ChrisCoyier, @davatron5000, @TrentWalton, @raygunray (on Github)</li>
+</ul>
+
+
+<p><a href="#index">Back to index</a></p>
+
+<p><br /></p>
+
+<hr />
+
+
+<p>Thank you for choosing a <a href="http://rakugaki.me">Rakugaki</a> theme. Enjoy blogging!</p>
+
+<p><br /></p>
+
+<p>Art Chen</p>
+
+<p>Feb 18, 2014</p>
+
+<p><br /></p>
+
+<p><a style="float:right;border:none;" href="http://rakugaki.me"><img src="./docs/slogo.png"></a></p>
+
+<p><br style="clear:both" />
+<br /></p>
+</body>
+</html>
