@@ -25,7 +25,7 @@ function Yabu_Settings(options) {
   var y_settings = $.extend({
           
     /* Set author name */
-    "y_author": "John Smith",
+    "y_author": "Wilson Yu",
 
     /* Set sidebar and logo position */
     "y_right_sidebar": false,
@@ -33,7 +33,7 @@ function Yabu_Settings(options) {
 
     /* Set author bio */
     "y_description": {
-      "set": true,
+      "set": false,
       "desc": "<p>Hermit Chen</p><p>Portfolio @ rakugaki.me</p><p>Themeforest ID = otakism</p><p>Thank you for previewing my theme.</p>",
 			"textalign": "center"
     },
@@ -54,7 +54,7 @@ function Yabu_Settings(options) {
       },
       {
         "name": "github",
-        "url": "#"
+        "url": "http://github.com/somethiiing"
       },
       {
         "name": "tumblr",
@@ -74,7 +74,7 @@ function Yabu_Settings(options) {
       },
       {
         "name": "linkedin",
-        "url": "#"
+        "url": "http://www.linkedin.com/in/wilsonyu2"
       },
       {
         "name": "pinterest",
